@@ -66,7 +66,7 @@ ELSE (OPENSHOT_IMAGEMAGICK_COMPATIBILITY)
 ENDIF (OPENSHOT_IMAGEMAGICK_COMPATIBILITY)
 
 # Find the ImageMagick++ library
-FIND_PACKAGE(ImageMagick COMPONENTS Magick++ MagickWand MagickCore)
+#FIND_PACKAGE(ImageMagick COMPONENTS Magick++ MagickWand MagickCore)
 IF (ImageMagick_FOUND)
 	# Include ImageMagick++ headers (needed for compile)
 	include_directories(${ImageMagick_INCLUDE_DIRS})
